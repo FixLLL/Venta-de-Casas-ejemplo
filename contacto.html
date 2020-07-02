@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bienes Raices</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+
+        <div class="contenedor contenido-header">
+
+            <div class="barra">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="Logotipo de Bienes Raices">
+                </a>
+                <div class="mobile-menu">
+                    <a href="#navegacion">
+                        <img src="/img/barras.svg" alt="Icono Menu">
+                    </a>
+                </div>
+
+                <nav id="navegacion" class="navegacion">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+            <!--barra-->
+
+        </div>
+        <!--contenedor-->
+    </header>
+
+
+    <h1 class="fw-300 centrar-texto">
+        Contacto
+    </h1>
+    <img src="img/destacada3.jpg" alt="Imagen de Contacto">
+
+    <main class="contenedor seccion contenido-centrado">
+        <h2 class="fw-300 centrar-texto">Rellene el Formulario de Contacto</h2>
+
+        <form action="">
+            <fieldset>
+                <legend>Información Personal</legend>
+                <label for="nombre"> Nombre:</label>
+                <input type="text" id="nombre" placeholder="Tu Nombre" required>
+
+                <label for="email"> E-mail:</label>
+                <input type="email" id="email" placeholder="Correo Electrónico" required>
+
+                <label for="numerotelefono"> Teléfono:</label>
+                <input type="tel" id="numerotelefono" placeholder="Número de contacto" required>
+
+                <label for="mensaje"> Mensaje:</label>
+                <textarea id="mensaje"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Información sobre la Propiedad</legend>
+                <label for="opciones">Compra o Venta:</label>
+                <select id="opciones">
+                    <option value="" disabled selected> --Seleccione su intención--</option>
+                    <option value="">Comprar</option>
+                    <option value="">Vender</option>
+                </select>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" min="0">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto</legend>
+                <p>Cómo desea que contactemos con usted</p>
+
+                <div class="forma-contacto">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="radio" name="contacto" value="telefono" id="telefono">
+
+                    <label for="correo">E-mail</label>
+                    <input type="radio" name="contacto" value="correo" id="correo">
+                </div>
+
+                <p> Si ha escogido Teléfono, eliga Fecha y Hora a la que desea recibir la llamada</p>
+                <label for="fecha">Fecha:</label>
+                <input type="date">
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" min="09:00" max="14:30">
+
+            </fieldset>
+
+            <input type="submit" value="Enviar" class="boton boton-verde">
+        </form>
+
+    </main>
+
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <p class="copyright">Todos los derechos reservados 2019 &copy;</p>
+        </div>
+    </footer>
+</body>
+
+</html>
